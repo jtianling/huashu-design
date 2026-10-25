@@ -49,6 +49,16 @@ metadata:
 用 HTML 做视觉产出：交互原型、设计变体探索、1920×1080 的 HTML deck、时间轴驱动的动画与视频、
 信息图与可视化。生产级 Web App、SEO 网站、需要后端的系统不走本 skill。
 
+## monkeys.im 平台适配
+
+这是 jtianling 维护的 monkeys.im fork. 在平台运行时, 先读
+[references/monkeys-platform.md](references/monkeys-platform.md), 再进入各模块.
+生图使用对话中的 `image_generate`, 配音使用 `text_to_speech`, 不从 shell
+调用供应商 API, 不索取用户 API key. 工具实际可用性以本轮工具定义为准,
+不能根据 capabilities.py 未发现本机生图 skill 或 key 就降级.
+配音默认采用平台音频清单, `narrate-pipeline.mjs` 不再默认请求豆包 API.
+平台适配规则优先于各模块中面向原宿主的安装和云脚本步骤.
+
 ## 开工三件事（每个设计任务都做，几秒钟）
 
 下面所有命令里的 `$HD` 是**本 skill 的根目录**（这份 SKILL.md 所在的目录），不是用户的项目目录——

@@ -1,3 +1,5 @@
+平台运行前先读 [monkeys.im 适配说明](monkeys-platform.md).  平台生图和配音使用 image_generate/text_to_speech, 以下供应商 API 与安装步骤不作为平台默认路径.
+
 # Voiceover Pipeline · 解说驱动动画
 
 > 把动画从「无声画面 + 后期配音」升级为「**先有解说词，再按音频实测时长驱动画面**」的工作流。

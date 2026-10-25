@@ -1,3 +1,9 @@
+# monkeys.im fork 数据流补充
+
+平台模式下, LLM 通过 image_generate 与 text_to_speech 将生成要求交给 monkeys.im 托管工具.  平台负责供应商路由、凭据、计费与结果存储, 因而不能把平台生成称为纯本地处理或零网络.  本仓库脚本不提取平台凭据, 不绕过工具调用供应商, 也不自行执行平台 HTTP 请求.  音频清单模式只读取已生成的本地文件并调用 FFmpeg/ffprobe, 无网络请求.  原 narration 管线的豆包路径改为显式 --provider doubao, 原同意门只适用于该供应商直连路径.  平台工具遵循平台授权及计费规则.
+
+以下为上游原宿主路径的数据流声明, 不能据此推断 monkeys.im 托管生成是本地运行.  完整平台规则见 references/monkeys-platform.md.
+
 # Security & Data-Flow Statement
 
 This document exhaustively declares every network destination, credential touchpoint, subprocess, and deletion this skill can perform, so that users and automated security reviewers can verify the claims against the code.

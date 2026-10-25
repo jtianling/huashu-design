@@ -1,3 +1,5 @@
+平台运行前先读 [monkeys.im 适配说明](../monkeys-platform.md).  平台生图和配音使用 image_generate/text_to_speech, 以下供应商 API 与安装步骤不作为平台默认路径.
+
 # 模块 · 动画 / 视频 / 宣传片
 
 时间轴驱动的一切走这里：HTML 动画、产品功能演示、launch film、带解说的概念视频、导出 MP4/GIF。这是本 skill 能力最多的模块，所以它有自己的路由。先过 SKILL.md 的窄桥（三方向门照走，初稿形态是方向板），再按这份手册做。

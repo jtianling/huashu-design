@@ -65,6 +65,7 @@ def main():
         except Exception:
             pass
     r = detect()
+    print('Platform tools are not detectable from this shell. In monkeys.im, inspect image_generate and text_to_speech in the conversation tool schema; missing local keys does not mean these tools are unavailable.', file=sys.stderr)
     if '--json' in sys.argv:
         print(json.dumps(r, ensure_ascii=False, indent=2))
         return 0
